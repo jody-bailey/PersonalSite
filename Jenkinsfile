@@ -7,7 +7,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'dotnet --version'
+                zsh 'dotnet --version'
             }
         }
         stage('Test') {
