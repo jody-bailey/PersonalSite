@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  personalsite:
+    image: ${DOCKER_REGISTRY-}personalsite
+    build:
+      context: .
+      dockerfile: ./Dockerfile
