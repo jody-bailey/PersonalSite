@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                dotnet build PersonalSite.csproj -c Release
+                sh 'dotnet build PersonalSite.csproj -c Release'
             }
         }
         stage('Test') {
