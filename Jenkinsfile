@@ -1,13 +1,13 @@
 pipeline {
     agent any
     environment {
-        dotnet = '/usr/local/share/dotnet'
+        dotnet = '/usr/local/share/dotnet/dotnet'
     }
     stages {
         stage('Build') {
             steps {
                 echo 'Building..'
-                dotnet build PersonalSite.csproj
+                sh 'dotnet build PersonalSite.csproj -c Release'
             }
         }
         stage('Test') {
