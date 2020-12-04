@@ -7,7 +7,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                zsh 'dotnet --version'
+                sh 'source ~/.zshrc && dotnet --version'
             }
         }
         stage('Test') {
