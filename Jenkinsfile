@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        dotnet = '/usr/local/share/dotnet/'
+        sh = '~/.zshrc'
     }
     stages {
         stage('Build') {
