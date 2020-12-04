@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    environment {
-        dotnet = '/usr/local/share/dotnet/dotnet'
-    }
     stages {
         stage('Build') {
             steps {
