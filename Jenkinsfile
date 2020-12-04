@@ -7,7 +7,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'where dotnet'
+                sh 'dotnet --version'
             }
         }
         stage('Test') {
