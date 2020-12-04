@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        sh = '~/.zshrc'
+        sh = 'source ~/.zshrc'
     }
     stages {
         stage('Build') {
