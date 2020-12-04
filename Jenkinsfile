@@ -1,13 +1,10 @@
 pipeline {
     agent any
-    environment {
-        sh = 'source ~/.zshrc'
-    }
     stages {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'source ~/.zshrc && dotnet --version'
+                sh 'dotnet --version'
             }
         }
         stage('Test') {
